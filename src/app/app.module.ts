@@ -8,7 +8,7 @@ import { ContentWrapperComponent } from './content-wrapper/content-wrapper.compo
 import { MainFooterComponent } from './main-footer/main-footer.component';
 import { ControlSiderbarComponent } from './control-siderbar/control-siderbar.component';
 import {DataTablesModule} from 'angular-datatables';
-import { PreloadAllModules, RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
