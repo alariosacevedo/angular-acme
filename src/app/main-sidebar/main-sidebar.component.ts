@@ -9,7 +9,7 @@ import $ from 'jquery'
 export class MainSidebarComponent {
 
   public  ngOnInit() {
-    this.OnSelected_Menu('LiUsers', 'Null');
+    this.OnSelected_Menu('LiDashBoard', 'Null');
   }
   
   public ngOnChanges() {
