@@ -26,6 +26,27 @@
 							</tr>
 						</thead>
 						<tbody>
+							<tr *ngFor="let item of productDtoList">
+								<td class="text-center">{{ item.producId }}</td>
+								<td>{{ item.code }}</td>
+								<td>{{ item.name }}</td>
+								<td>{{ item.description }}</td>
+								<td>{{ item.quantity }}</td>
+								<td>{{ item.price }}</td>
+								<td>{{ item.rating }}</td>
+								<td class="text-center">
+									<a class="btn btn-info btn-xs">
+										<span>
+											<i class="fa fa-fw fa-edit"></i> Edit
+										</span>
+									</a>
+									<a class="btn btn-danger btn-xs" style="margin-left:1px;">
+										<span>
+											<i class="fa fa-fw fa-remove"></i> Delete
+										</span>
+									</a>
+								</td>
+							</tr>
 						</tbody>
 					</table>
 				</div>

@@ -11,6 +11,9 @@ import {DataTablesModule} from 'angular-datatables';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common'
+import { ProductsListComponent } from './products/products-list/products-list.component'
+
 
 @NgModule({
   declarations: [
@@ -19,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     MainSidebarComponent,
     ContentWrapperComponent,
     MainFooterComponent,
-    ControlSiderbarComponent
+    ControlSiderbarComponent,
+    ProductsListComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +33,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
