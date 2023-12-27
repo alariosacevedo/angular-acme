@@ -1,6 +1,13 @@
 <aside class="main-sidebar">
     <section class="sidebar">
         <ul class="sidebar-menu" data-widget="tree">
+
+            <li id="LiDashBoard" (click)="OnSelected_Menu('LiDashBoard', 'Null')">
+                <a [routerLink]="['dashboard']" class="nav-link">
+                    <i class="fa fa-dashboard"></i><span>DashBoard</span>
+                </a>
+            </li>
+
         </ul>
     </section>
 </aside>
