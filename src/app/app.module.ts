@@ -7,6 +7,7 @@ import { MainSidebarComponent } from './main-sidebar/main-sidebar.component';
 import { ContentWrapperComponent } from './content-wrapper/content-wrapper.component';
 import { MainFooterComponent } from './main-footer/main-footer.component';
 import { ControlSiderbarComponent } from './control-siderbar/control-siderbar.component';
+import {DataTablesModule} from 'angular-datatables';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ControlSiderbarComponent } from './control-siderbar/control-siderbar.co
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DataTablesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
