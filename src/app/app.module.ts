@@ -8,6 +8,9 @@ import { ContentWrapperComponent } from './content-wrapper/content-wrapper.compo
 import { MainFooterComponent } from './main-footer/main-footer.component';
 import { ControlSiderbarComponent } from './control-siderbar/control-siderbar.component';
 import {DataTablesModule} from 'angular-datatables';
+import { PreloadAllModules, RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,11 @@ import {DataTablesModule} from 'angular-datatables';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule,
     DataTablesModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
