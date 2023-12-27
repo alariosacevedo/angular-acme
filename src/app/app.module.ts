@@ -12,7 +12,7 @@ import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common'
-import { ProductsListComponent } from './products/products-list/products-list.component'
+import { ProductsModule } from './products/products.module';
 
 
 @NgModule({
@@ -23,7 +23,6 @@ import { ProductsListComponent } from './products/products-list/products-list.co
     ContentWrapperComponent,
     MainFooterComponent,
     ControlSiderbarComponent,
-    ProductsListComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +32,8 @@ import { ProductsListComponent } from './products/products-list/products-list.co
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    CommonModule
+    CommonModule,
+    ProductsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
