@@ -1,4 +1,4 @@
-<form role="form" id="frmProductsDetails">
+<form role="form" id="frmProductsDetails" #frmUserAddEdit="ngForm" ngNativeValidate>
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="box box-primary">
@@ -14,7 +14,7 @@
                                 name="txtProductId"
                                 class="form-control" 
                                 style="border-radius: 5px 5px 5px 5px;" 
-                                required>
+                                [(ngModel)]="productDto.productId">
                         </div>
 
                         <div class="form-group">
@@ -26,7 +26,7 @@
                                 style="border-radius: 5px 5px 5px 5px;" 
                                 minlength="3"
                                 maxlength="10"
-                                required>
+                                [(ngModel)]="productDto.code">
                         </div>
 
                         <div class="form-group">
@@ -38,7 +38,7 @@
                                 style="border-radius: 5px 5px 5px 5px;" 
                                 minlength="3"
                                 maxlength="20"
-                                required>
+                                [(ngModel)]="productDto.name">
                         </div>
 
                         <div class="form-group">
@@ -50,7 +50,7 @@
                                 style="border-radius: 5px 5px 5px 5px;" 
                                 minlength="7"
                                 maxlength="30"
-                                required>
+                                [(ngModel)]="productDto.description">
                         </div>
 
                         <div class="form-group">
@@ -62,7 +62,7 @@
                                 style="border-radius: 5px 5px 5px 5px;" 
                                 minlength="7"
                                 maxlength="30"
-                                required>
+                                [(ngModel)]="productDto.quantity">
                         </div>
 
                         <div class="form-group">
@@ -74,7 +74,7 @@
                                 style="border-radius: 5px 5px 5px 5px;" 
                                 minlength="7"
                                 maxlength="30"
-                                required>
+                                [(ngModel)]="productDto.price">
                         </div>
 
                         <div class="form-group">
@@ -86,7 +86,7 @@
                                 style="border-radius: 5px 5px 5px 5px;" 
                                 minlength="7"
                                 maxlength="30"
-                                required>
+                                [(ngModel)]="productDto.rating">
                         </div>
 
                     </div>

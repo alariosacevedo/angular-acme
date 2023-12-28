@@ -5,6 +5,7 @@ import {RouterModule} from '@angular/router';
 import { ProductsAddeditComponent } from './products-addedit/products-addedit.component';
 import { ProductsListComponent } from './products-list/products-list.component';
 import { ProductsDetailsComponent } from './products-details/products-details.component'
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ProductsDetailsComponent } from './products-details/products-details.co
   imports: [
     CommonModule,
     BrowserModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ]
 })
 export class ProductsModule { }

@@ -7,6 +7,8 @@ import { ProductDto } from '../dto/product-dto.model';
   providedIn: 'root'
 })
 export class ProductsService {
+  public productDto = new ProductDto();
+
   public productDtoList: ProductDto[] = [
     {
       "productId": 1,
@@ -38,6 +40,20 @@ export class ProductsService {
   ];
 
   constructor(private httpClient: HttpClient) { }
+
+  public getProductById(productId: number): Observable<ProductDto> {
+    if (productId = 1){
+      this.productDto.productId = 1;
+      this.productDto.code = "A";
+      this.productDto.name = "Elegance Hair Gel";
+      this.productDto.description = "Strong hold hair gel.";
+      this.productDto.quantity = 1;
+      this.productDto.price = 1;
+      this.productDto.rating = 1;
+    }
+    
+    return of(this.productDto);
+  }
 
   public getProductsList() {
     return this.productDtoList;
