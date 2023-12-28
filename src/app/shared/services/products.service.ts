@@ -2,13 +2,13 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable, catchError, map, of, tap, throwError } from 'rxjs';
 import { ProductDto } from '../dto/product-dto.model';
+import { ActivatedRoute } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductsService {
   public productDto = new ProductDto();
-
   public productDtoList: ProductDto[] = [
     {
       "productId": 1,
@@ -39,10 +39,10 @@ export class ProductsService {
       }
   ];
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient, private route: ActivatedRoute) { }
 
   public getProductById(productId: number): Observable<ProductDto> {
-    if (productId = 1){
+    if (productId === 1){
       this.productDto.productId = 1;
       this.productDto.code = "A";
       this.productDto.name = "Elegance Hair Gel";
@@ -51,7 +51,15 @@ export class ProductsService {
       this.productDto.price = 1;
       this.productDto.rating = 1;
     }
-    
+    else {
+      this.productDto.productId = 0;
+      this.productDto.code = "";
+      this.productDto.name = "";
+      this.productDto.description = "";
+      this.productDto.quantity = 0;
+      this.productDto.price = 0;
+      this.productDto.rating = 0;
+    }
     return of(this.productDto);
   }
 
