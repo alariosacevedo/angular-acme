@@ -26,15 +26,15 @@ import { UsersModule } from './users/users.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    HttpClientModule,
+    ProductsModule,
+    UsersModule,
     RouterModule,
     DataTablesModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule,
     CommonModule,
-    ProductsModule,
-    UsersModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

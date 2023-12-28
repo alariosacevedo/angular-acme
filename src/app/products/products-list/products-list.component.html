@@ -27,7 +27,7 @@
 						</thead>
 						<tbody>
 							<tr *ngFor="let item of productDtoList">
-								<td class="text-center">{{ item.producId }}</td>
+								<td class="text-center">{{ item.productId }}</td>
 								<td>{{ item.code }}</td>
 								<td>{{ item.name }}</td>
 								<td>{{ item.description }}</td>
@@ -35,7 +35,13 @@
 								<td>{{ item.price }}</td>
 								<td>{{ item.rating }}</td>
 								<td class="text-center">
-									<a class="btn btn-info btn-xs">
+									<a class="btn btn-success btn-xs" [routerLink]="['/products',item.productId,'details']">
+										<span>
+											<i class="fa fa-fw fa-beer"></i> Details
+										</span>
+									</a>
+
+									<a class="btn btn-info btn-xs" style="margin-left:1px;" [routerLink]="['/products',item.productId,'addedit']">
 										<span>
 											<i class="fa fa-fw fa-edit"></i> Edit
 										</span>

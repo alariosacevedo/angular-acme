@@ -9,7 +9,7 @@ import { ProductDto } from '../dto/product-dto.model';
 export class ProductsService {
   public productDtoList: ProductDto[] = [
     {
-      "producId": 1,
+      "productId": 1,
       "code": "A",
       "name": "Elegance Hair Gel",
       "description": "Strong hold hair gel.",
@@ -18,7 +18,7 @@ export class ProductsService {
       "rating": 1
       },
       {
-      "producId": 2,
+      "productId": 2,
       "code": "B",
       "name": "Elegance Hair Serum",
       "description": "Hair serum with vitamins.",
@@ -27,7 +27,7 @@ export class ProductsService {
       "rating": 2
       },
       {
-      "producId": 3,
+      "productId": 3,
       "code": "C",
       "name": "Elegance Hair Shampoo",
       "description": "Hair Shampoo with Aloe Vera.",

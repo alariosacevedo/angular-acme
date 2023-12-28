@@ -9,7 +9,7 @@
             </li>
 
             <li class="treeview" id="LiProducts" (click)="OnSelected_Menu('LiProducts', 'Null')">
-                <a href="#" >
+                <a href="#">
                     <i class="fa fa-beer" ></i><span>Products</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
@@ -17,13 +17,13 @@
                 </a>
                 <ul class="treeview-menu">
                     <li id="LiProductsList" (click)="OnSelected_Menu('LiProducts', 'LiProductsList')">
-                        <a routerLink="products-list" class="nav-link">
+                        <a [routerLink]="['/products']" class="nav-link">
                             <i class="fa fa-circle-o"></i>List
                         </a>
                     </li>
 
                     <li id="LiProductsAddEdit" (click)="OnSelected_Menu('LiProducts', 'LiProductsAddEdit')">
-                        <a routerLink="products-addedit" class="nav-link">
+                        <a [routerLink]="['/products','0','addedit']" class="nav-link">
                             <i class="fa fa-circle-o"></i>Add-Edit
                         </a>
                     </li>
