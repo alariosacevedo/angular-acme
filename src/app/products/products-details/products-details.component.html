@@ -1,1 +1,100 @@
-<p>products-details works!</p>
+<form role="form" id="frmProductsDetails">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <i class="fa fa-fw fa-beer"></i>
+                    <h3 class="box-title">Details</h3>
+                </div>
+                    <div class="box-body">
+                        <div class="form-group">
+                            <label for="txtProductId">Id</label>
+                            <input type="text" 
+                                id="txtProductId" 
+                                name="txtProductId"
+                                class="form-control" 
+                                style="border-radius: 5px 5px 5px 5px;" 
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtCode">Code</label>
+                            <input type="text" 
+                                id="txtCode" 
+                                name="txtCode"
+                                class="form-control"
+                                style="border-radius: 5px 5px 5px 5px;" 
+                                minlength="3"
+                                maxlength="10"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtName">Name</label>
+                            <input type="text" 
+                                id="txtName" 
+                                name="txtName" 
+                                class="form-control" 
+                                style="border-radius: 5px 5px 5px 5px;" 
+                                minlength="3"
+                                maxlength="20"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtDescription">Description</label>
+                            <input type="text" 
+                                id="txtDescription" 
+                                name="txtDescription" 
+                                class="form-control" 
+                                style="border-radius: 5px 5px 5px 5px;" 
+                                minlength="7"
+                                maxlength="30"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtQuantity">Quantity</label>
+                            <input type="text" 
+                                id="txtQuantity" 
+                                name="txtQuantity" 
+                                class="form-control" 
+                                style="border-radius: 5px 5px 5px 5px;" 
+                                minlength="7"
+                                maxlength="30"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtPrice">Price</label>
+                            <input type="text" 
+                                id="txtPrice" 
+                                name="txtPrice" 
+                                class="form-control" 
+                                style="border-radius: 5px 5px 5px 5px;" 
+                                minlength="7"
+                                maxlength="30"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtRating">Rating</label>
+                            <input type="text" 
+                                id="txtRating" 
+                                name="txtRating" 
+                                class="form-control" 
+                                style="border-radius: 5px 5px 5px 5px;" 
+                                minlength="7"
+                                maxlength="30"
+                                required>
+                        </div>
+
+                    </div>
+                    <div class="box-footer text-center">
+                        <button type="button" class="btn btn-warning" style="margin-left:1px;">Return</button>
+                        <button type="submit" class="btn btn-success" style="margin-left:1px;">Submit</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+</form>
