@@ -3,7 +3,7 @@
         <ul class="sidebar-menu" data-widget="tree">
 
             <li id="LiDashBoard" (click)="OnSelected_Menu('LiDashBoard', 'Null')">
-                <a href="#" class="nav-link">
+                <a class="nav-link" href="#" >
                     <i class="fa fa-dashboard"></i><span>DashBoard</span>
                 </a>
             </li>
@@ -17,13 +17,13 @@
                 </a>
                 <ul class="treeview-menu">
                     <li id="LiProductsList" (click)="OnSelected_Menu('LiProducts', 'LiProductsList')">
-                        <a [routerLink]="['/products']" class="nav-link">
+                        <a class="nav-link" [routerLink]="['/products']">
                             <i class="fa fa-circle-o"></i>List
                         </a>
                     </li>
 
                     <li id="LiProductsAddEdit" (click)="OnSelected_Menu('LiProducts', 'LiProductsAddEdit')">
-                        <a [routerLink]="['/products','0','addedit']" class="nav-link">
+                        <a class="nav-link" [routerLink]="['/products',0,'addedit']" >
                             <i class="fa fa-circle-o"></i>Add-Edit
                         </a>
                     </li>
