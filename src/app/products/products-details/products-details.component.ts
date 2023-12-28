@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { NgForm } from '@angular/forms';
 import { ProductsService } from '../../shared/services/products.service';
@@ -11,7 +11,7 @@ import { Subscription } from 'rxjs';
   styleUrl: './products-details.component.css'
 })
 
-export class ProductsDetailsComponent implements OnInit {  
+export class ProductsDetailsComponent implements OnInit, OnDestroy {  
   public subscription!: Subscription;
   public errorMessage: string = '';
   public productDto = new ProductDto();
@@ -34,5 +34,9 @@ export class ProductsDetailsComponent implements OnInit {
    else {
 
    }   
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 }
