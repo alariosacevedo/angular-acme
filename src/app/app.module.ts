@@ -12,7 +12,6 @@ import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common'
-import { ProductsModule } from './products/products.module';
 import { UsersModule } from './users/users.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 

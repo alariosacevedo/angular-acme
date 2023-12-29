@@ -29,7 +29,9 @@
 							<tr *ngFor="let item of productDtoList">
 								<td class="text-center">{{ item.productId }}</td>
 								<td>
-									<a [routerLink]="['/products',item.productId,'details']"> {{ item.code }} </a>
+									<a [routerLink]="['/products',item.productId,'details']" [queryParams]="{filterBy:filterBy, showImage:showImage}"> 
+										{{ item.code }} 
+									</a>
 								</td>
 								<td>{{ item.name }}</td>
 								<td>{{ item.description }}</td>
